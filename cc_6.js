@@ -11,11 +11,6 @@ class Employee{
 
 
 }
-const Emp1 = new Employee("Josh", "Analyst")
-const Emp2 = new Employee("Jane", "Accounting")
-// Testing out step 2
-console.log(Emp1.describe())
-
 
 // Step 3 creating a subclass for manager
 class Manager extends Employee{
@@ -28,7 +23,14 @@ class Manager extends Employee{
         return `${this.name} is the manager of the ${this.department}. They oversee ${this.teamSize} people.`
     }
 }
-// Testing oit step 3
-const Emp3 = new Manager("Ashley", "Marketing", 8 )
+// Step 4 creating a few sample employees and managers
+const Emp1 = new Employee("Josh", "Analyst")
+const Emp2 = new Employee("Jane", "Accounting")
+const Emp3 = new Employee("Zach", "Sales")
+const Emp4 = new Manager("Ashley", "Marketing", 8 )
+const Emp5 = new Manager("Eric", "Sales", 30)
 
-console.log(Emp3.describe())
+// Testing output to console
+console.log(Emp4.describe())
+console.log(Emp1.describe())
+console.log(Emp5.describe())

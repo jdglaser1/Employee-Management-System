@@ -31,13 +31,14 @@ const Emp3 = new Employee("Zach", "Sales")
 const Emp4 = new Manager("Ashley", "Marketing", 8 )
 const Emp5 = new Manager("Eric", "Sales", 30)
 
-// Here I am testing to see if my sample employees and mangers work properly
+/* Here I am testing to see if my sample employees and mangers work properly
 console.log(Emp1.describe())
 console.log(Emp2.describe())
 console.log(Emp3.describe())
 console.log(Emp4.describe())
 console.log(Emp5.describe())
 
+*/
 
 // Step 5. creating a class called company with employees as an array
 
@@ -61,4 +62,12 @@ class Company{
 // Step 6 creating an instance for company object
 const comp = new Company()
 
-//creating employee and manager instances
+//adding employee instances
+comp.addEmployee(Emp1)
+comp.addEmployee(Emp2)
+comp.addEmployee(Emp3)
+//adding manager instances
+comp.addEmployee(Emp4)
+comp.addEmployee(Emp5)
+
+comp.listEmployees()

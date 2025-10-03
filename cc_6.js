@@ -50,3 +50,8 @@ class Company{
     }
 }
 
+// Step 6 creating an instance for company objects
+
+const comp = new Company()
+
+

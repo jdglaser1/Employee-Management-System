@@ -6,7 +6,7 @@ class Employee{
     }
     // Adding a method that returns the string about the employee
     describe(){
-        console.log(`${this.name} works in ${this.department}`)
+       return `${this.name} works in ${this.department}`
     }
 
 
@@ -31,6 +31,14 @@ const Emp3 = new Employee("Zach", "Sales")
 const Emp4 = new Manager("Ashley", "Marketing", 8 )
 const Emp5 = new Manager("Eric", "Sales", 30)
 
+// Here I am testing to see if my sample employees and mangers work properly
+console.log(Emp1.describe())
+console.log(Emp2.describe())
+console.log(Emp3.describe())
+console.log(Emp4.describe())
+console.log(Emp5.describe())
+
+
 // Step 5. creating a class called company with employees as an array
 
 class Company{
@@ -50,8 +58,7 @@ class Company{
     }
 }
 
-// Step 6 creating an instance for company objects
-
+// Step 6 creating an instance for company object
 const comp = new Company()
 
-
+//creating employee and manager instances

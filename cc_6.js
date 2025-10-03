@@ -12,6 +12,7 @@ class Employee{
 
 }
 
+
 // Step 3 creating a subclass for manager
 class Manager extends Employee{
     constructor (name,department,teamSize){
@@ -30,7 +31,22 @@ const Emp3 = new Employee("Zach", "Sales")
 const Emp4 = new Manager("Ashley", "Marketing", 8 )
 const Emp5 = new Manager("Eric", "Sales", 30)
 
-// Testing output to console
-console.log(Emp4.describe())
-console.log(Emp1.describe())
-console.log(Emp5.describe())
+// Step 5. creating a class called company with employees as an array
+
+class Company{
+    constructor() {
+        this.employees = []
+    }
+    //This part adds the employee to the array
+    addEmployee(employee){
+        this.employees.push(employee)
+    }
+    //this part logs the employee description
+    listEmployees(){
+       this.employees.forEach(employee => {
+        console.log(employee.describe())
+       })
+
+    }
+}
+
